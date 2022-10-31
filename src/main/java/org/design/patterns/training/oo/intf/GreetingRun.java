@@ -8,16 +8,20 @@ public class GreetingRun {
 
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int index = scanner.nextInt();
-        IGreeting greeting = GreetingsFactory.createGreetings(index);
+        try (Scanner scanner = new Scanner(System.in)) {
+            int index = scanner.nextInt();
+            IGreeting greeting = GreetingsFactory.createGreetings(index);
 
-        System.out.println("isminizi giriniz : ");
-        String name = scanner.nextLine();
-        String sayHello = greeting.sayHello(name);
-        String sayGoodbye = greeting.sayGoodbye(name);
-        System.out.println(sayHello);
-        System.out.println(sayGoodbye);
+            System.out.println("isminizi giriniz : ");
+            String name = scanner.nextLine();
+            String sayHello = greeting.sayHello(name);
+            String sayGoodbye = greeting.sayGoodbye(name);
+            System.out.println(sayHello);
+            System.out.println(sayGoodbye);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
 
     }

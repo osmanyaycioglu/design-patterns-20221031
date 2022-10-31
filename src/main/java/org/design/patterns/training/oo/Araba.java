@@ -1,5 +1,8 @@
 package org.design.patterns.training.oo;
 
+import lombok.ToString;
+
+@ToString
 public class Araba {
     private int speed;
     private double yakit;
