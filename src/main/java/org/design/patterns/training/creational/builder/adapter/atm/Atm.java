@@ -1,10 +1,6 @@
-package org.design.patterns.training.atm;
-
-import org.design.patterns.training.creational.factory.GreetingsFactory;
-import org.design.patterns.training.oo.intf.IGreeting;
+package org.design.patterns.training.creational.builder.adapter.atm;
 
 import java.math.BigDecimal;
-import java.util.Optional;
 import java.util.Scanner;
 
 public class Atm {

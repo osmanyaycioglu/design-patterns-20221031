@@ -1,4 +1,5 @@
-package org.design.patterns.training.structural.adapter;
+package org.design.patterns.training.creational.builder.adapter;
+
 
 public class Employee {
     private String name;
@@ -42,6 +43,15 @@ public class Employee {
 
     public void setGender(EGender gender) {
         this.gender = gender;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", gender=" + gender +
+                '}';
     }
 
     public static class EmployeeBuilder {

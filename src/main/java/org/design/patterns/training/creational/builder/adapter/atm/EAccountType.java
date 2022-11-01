@@ -1,4 +1,4 @@
-package org.design.patterns.training.atm;
+package org.design.patterns.training.creational.builder.adapter.atm;
 
 public enum EAccountType {
     TL("Turk lirası"),

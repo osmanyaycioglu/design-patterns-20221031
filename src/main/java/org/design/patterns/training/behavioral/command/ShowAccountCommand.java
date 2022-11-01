@@ -1,10 +1,8 @@
 package org.design.patterns.training.behavioral.command;
 
-import org.design.patterns.training.atm.Account;
-import org.design.patterns.training.atm.Customer;
-import org.design.patterns.training.atm.EAccountType;
+import org.design.patterns.training.creational.builder.adapter.atm.Account;
+import org.design.patterns.training.creational.builder.adapter.atm.Customer;
 
-import java.util.List;
 import java.util.Scanner;
 
 public class ShowAccountCommand extends AbstractAtmCommand {
@@ -19,5 +17,11 @@ public class ShowAccountCommand extends AbstractAtmCommand {
         Account account = getAccountFromAccountList(customer,scanner);
         System.out.println("account : " + account);
     }
+
+    @Override
+    public IAtmCommand clone() {
+        return new DepositMoneyCommand();
+    }
+
 
 }

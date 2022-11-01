@@ -1,4 +1,4 @@
-package org.design.patterns.training.structural.adapter;
+package org.design.patterns.training.creational.builder.adapter;
 
 public class PersonToEmployeeAdapter extends Employee {
 

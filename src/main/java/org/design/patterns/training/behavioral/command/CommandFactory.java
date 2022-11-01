@@ -1,5 +1,7 @@
 package org.design.patterns.training.behavioral.command;
 
+import org.design.patterns.training.structural.proxy.AtmCommandProxy;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +13,7 @@ public class CommandFactory {
         this.atmCommands.add(new ShowAccountCommand());
         this.atmCommands.add(new DepositMoneyCommand());
         this.atmCommands.add(new WithDrawMoneyCommand());
+        this.atmCommands.add(new PrintCustomerCommand());
     }
 
     public void showMenu() {
@@ -24,6 +27,6 @@ public class CommandFactory {
         if (index > atmCommands.size()){
             return null;
         }
-        return atmCommands.get(index - 1);
+        return new AtmCommandProxy(atmCommands.get(index - 1).clone());
     }
 }

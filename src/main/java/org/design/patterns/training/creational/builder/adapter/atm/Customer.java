@@ -1,4 +1,4 @@
-package org.design.patterns.training.atm;
+package org.design.patterns.training.creational.builder.adapter.atm;
 
 import java.util.ArrayList;
 import java.util.List;

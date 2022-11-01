@@ -1,8 +1,12 @@
-package org.design.patterns.training.structural.adapter;
+package org.design.patterns.training.creational.builder.adapter;
+
+import org.design.patterns.training.structural.proxy.PrinterProxy;
 
 public class PrinterRun {
+
+
     public static void main(String[] args) {
-        Printer printer = new Printer();
+        Printer printer = new PrinterProxy(); // bu satırı değiştirerek
         Employee employee = Employee.builder()
                                     .withName("osman")
                                     .withSurname("yaycıoğlu")

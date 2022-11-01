@@ -1,9 +1,7 @@
 package org.design.patterns.training.behavioral.command;
 
-import org.design.patterns.training.atm.Customer;
-import org.design.patterns.training.atm.EAccountType;
+import org.design.patterns.training.creational.builder.adapter.atm.Customer;
 
-import java.util.Map;
 import java.util.Scanner;
 
 public interface IAtmCommand {
@@ -16,4 +14,6 @@ public interface IAtmCommand {
                  Scanner scanner);
 
     String commandDesc();
+
+    IAtmCommand clone();
 }
