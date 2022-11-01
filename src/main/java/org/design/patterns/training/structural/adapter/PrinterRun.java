@@ -13,8 +13,25 @@ public class PrinterRun {
         Person person = Person.builder()
                               .withFullName("osman yaycıoğlu")
                               .withGender("MALE")
-                              .build(); // Bu satırı değiştirebilirsiniz
-        printer.print(person);
+                              .build();
 
+//        String[] split = person.getFullName()
+//                               .split(" ");
+//        Employee employee1 = new Employee();
+//        employee1.setName(split[0]);
+//        employee1.setSurname(split[1]);
+//        employee1.setGender(EGender.valueOf(person.getGender()));
+//        printer.print(employee1);
+        Person person1 = Person.builder()
+                             .withFullName("osman yaycıoğlu")
+                             .withGender("MALE")
+                             .build();
+        Employee personAdapter = new PersonToEmployeeAdapter(person1); // Bu satırı değiştirebilirsiniz
+        printer.print(personAdapter);
+
+
+        NewPrinter newPrinter = new NewPrinter();
+        newPrinter.print(person1);
+        newPrinter.print(employee);
     }
 }
