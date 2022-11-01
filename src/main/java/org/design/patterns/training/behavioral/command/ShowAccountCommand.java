@@ -20,7 +20,7 @@ public class ShowAccountCommand extends AbstractAtmCommand {
 
     @Override
     public IAtmCommand clone() {
-        return new DepositMoneyCommand();
+        return new ShowAccountCommand();
     }
 
 

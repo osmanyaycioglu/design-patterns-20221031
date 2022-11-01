@@ -23,7 +23,7 @@ public class WithDrawMoneyCommand extends AbstractAtmCommand{
 
     @Override
     public IAtmCommand clone() {
-        return new DepositMoneyCommand();
+        return new WithDrawMoneyCommand();
     }
 
 }

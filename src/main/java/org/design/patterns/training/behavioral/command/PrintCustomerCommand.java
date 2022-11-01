@@ -19,7 +19,7 @@ public class PrintCustomerCommand extends AbstractAtmCommand {
     }
     @Override
     public IAtmCommand clone() {
-        return new DepositMoneyCommand();
+        return new PrintCustomerCommand();
     }
 
 
