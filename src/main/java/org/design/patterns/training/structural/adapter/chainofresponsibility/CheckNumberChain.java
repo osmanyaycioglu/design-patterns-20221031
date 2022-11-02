@@ -1,12 +1,15 @@
-package org.design.patterns.training.structural.chainofresponsibility;
+package org.design.patterns.training.structural.adapter.chainofresponsibility;
 
-public class CheckNumber implements ICheckNumber {
+public class CheckNumberChain implements ICheckNumber {
 
-    private Integer min;
-    private Integer max;
+    private Integer          min;
+    private Integer          max;
+    private CheckNumberChain numberChain;
 
-    public CheckNumber(Integer min,
-                       Integer max) {
+    public CheckNumberChain(CheckNumberChain numberChain,
+                            Integer min,
+                            Integer max) {
+        this.numberChain = numberChain;
         this.min = min;
         this.max = max;
     }
@@ -28,6 +31,9 @@ public class CheckNumber implements ICheckNumber {
                 System.out.println(min + " ile " + max + " arasında");
                 return true;
             }
+        }
+        if (numberChain != null){
+            return numberChain.check(value);
         }
         return false;
     }

@@ -1,7 +1,6 @@
-package org.design.patterns.training.structural.chainofresponsibility.atm;
+package org.design.patterns.training.structural.adapter.chainofresponsibility.atm;
 
 import org.design.patterns.training.atm.Customer;
-import org.design.patterns.training.structural.chainofresponsibility.ICheckNumber;
 
 public class NameRule extends AbstractCustomerRule {
 

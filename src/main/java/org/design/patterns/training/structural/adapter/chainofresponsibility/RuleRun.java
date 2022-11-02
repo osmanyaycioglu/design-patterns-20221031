@@ -1,7 +1,5 @@
-package org.design.patterns.training.structural.chainofresponsibility;
+package org.design.patterns.training.structural.adapter.chainofresponsibility;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
 public class RuleRun {

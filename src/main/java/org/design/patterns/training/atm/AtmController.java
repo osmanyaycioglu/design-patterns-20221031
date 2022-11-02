@@ -2,10 +2,10 @@ package org.design.patterns.training.atm;
 
 import org.design.patterns.training.behavioral.command.CommandFactory;
 import org.design.patterns.training.behavioral.command.IAtmCommand;
-import org.design.patterns.training.structural.chainofresponsibility.atm.AccountRule;
-import org.design.patterns.training.structural.chainofresponsibility.atm.ICustomerRule;
-import org.design.patterns.training.structural.chainofresponsibility.atm.NameRule;
-import org.design.patterns.training.structural.chainofresponsibility.atm.NameStartRule;
+import org.design.patterns.training.structural.adapter.chainofresponsibility.atm.AccountRule;
+import org.design.patterns.training.structural.adapter.chainofresponsibility.atm.ICustomerRule;
+import org.design.patterns.training.structural.adapter.chainofresponsibility.atm.NameRule;
+import org.design.patterns.training.structural.adapter.chainofresponsibility.atm.NameStartRule;
 import org.design.patterns.training.structural.facade.atm.CustomerManagementFacade;
 
 import java.util.List;
