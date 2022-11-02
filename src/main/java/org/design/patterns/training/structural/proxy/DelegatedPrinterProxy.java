@@ -1,7 +1,7 @@
 package org.design.patterns.training.structural.proxy;
 
-import org.design.patterns.training.creational.builder.adapter.Employee;
-import org.design.patterns.training.creational.builder.adapter.Printer;
+import org.design.patterns.training.structural.adapter.Employee;
+import org.design.patterns.training.structural.adapter.Printer;
 
 public class DelegatedPrinterProxy extends Printer {
 

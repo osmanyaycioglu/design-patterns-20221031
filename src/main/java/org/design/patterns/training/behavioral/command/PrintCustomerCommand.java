@@ -1,8 +1,8 @@
 package org.design.patterns.training.behavioral.command;
 
-import org.design.patterns.training.creational.builder.adapter.atm.AtmManager;
-import org.design.patterns.training.creational.builder.adapter.atm.Customer;
-import org.design.patterns.training.creational.builder.adapter.CustomerToEmployeeAdapter;
+import org.design.patterns.training.atm.AtmManager;
+import org.design.patterns.training.atm.Customer;
+import org.design.patterns.training.structural.adapter.CustomerToEmployeeAdapter;
 
 import java.util.Scanner;
 
@@ -18,7 +18,7 @@ public class PrintCustomerCommand extends AbstractAtmCommand {
         AtmManager.getInstance().print(new CustomerToEmployeeAdapter(customer));
     }
     @Override
-    public IAtmCommand clone() {
+    public IAtmCommand cloneMe() {
         return new PrintCustomerCommand();
     }
 

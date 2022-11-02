@@ -1,7 +1,7 @@
 package org.design.patterns.training.behavioral.command;
 
-import org.design.patterns.training.creational.builder.adapter.atm.Account;
-import org.design.patterns.training.creational.builder.adapter.atm.Customer;
+import org.design.patterns.training.atm.Account;
+import org.design.patterns.training.atm.Customer;
 
 import java.util.List;
 import java.util.Scanner;

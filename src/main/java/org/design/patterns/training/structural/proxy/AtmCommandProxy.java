@@ -1,6 +1,6 @@
 package org.design.patterns.training.structural.proxy;
 
-import org.design.patterns.training.creational.builder.adapter.atm.Customer;
+import org.design.patterns.training.atm.Customer;
 import org.design.patterns.training.behavioral.command.IAtmCommand;
 
 import java.util.Scanner;
@@ -23,5 +23,10 @@ public class AtmCommandProxy implements IAtmCommand {
     @Override
     public String commandDesc() {
         return iAtmCommand.commandDesc();
+    }
+
+    @Override
+    public IAtmCommand cloneMe() {
+        return iAtmCommand.cloneMe();
     }
 }

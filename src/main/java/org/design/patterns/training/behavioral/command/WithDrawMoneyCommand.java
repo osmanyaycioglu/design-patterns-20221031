@@ -1,7 +1,7 @@
 package org.design.patterns.training.behavioral.command;
 
-import org.design.patterns.training.creational.builder.adapter.atm.Account;
-import org.design.patterns.training.creational.builder.adapter.atm.Customer;
+import org.design.patterns.training.atm.Account;
+import org.design.patterns.training.atm.Customer;
 
 import java.math.BigDecimal;
 import java.util.Scanner;
@@ -22,7 +22,7 @@ public class WithDrawMoneyCommand extends AbstractAtmCommand{
     }
 
     @Override
-    public IAtmCommand clone() {
+    public IAtmCommand cloneMe() {
         return new WithDrawMoneyCommand();
     }
 

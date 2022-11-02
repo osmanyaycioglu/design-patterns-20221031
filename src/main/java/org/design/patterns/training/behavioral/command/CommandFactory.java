@@ -16,17 +16,18 @@ public class CommandFactory {
         this.atmCommands.add(new PrintCustomerCommand());
     }
 
-    public void showMenu() {
-        int index = 1;
-        for (IAtmCommand ac : atmCommands) {
-            System.out.println((index++) + "-" + ac.commandDesc());
+    public List<IAtmCommand> getAtmCommands(){
+        List<IAtmCommand> commands = new ArrayList<>();
+        for (int i = 0; i < atmCommands.size(); i++) {
+            commands.add(getCommand(i));
         }
+        return commands;
     }
 
     public IAtmCommand getCommand(int index){
         if (index > atmCommands.size()){
             return null;
         }
-        return new AtmCommandProxy(atmCommands.get(index - 1).clone());
+        return new AtmCommandProxy(atmCommands.get(index - 1).cloneMe());
     }
 }

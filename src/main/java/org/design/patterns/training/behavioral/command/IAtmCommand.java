@@ -1,6 +1,6 @@
 package org.design.patterns.training.behavioral.command;
 
-import org.design.patterns.training.creational.builder.adapter.atm.Customer;
+import org.design.patterns.training.atm.Customer;
 
 import java.util.Scanner;
 
@@ -15,5 +15,5 @@ public interface IAtmCommand {
 
     String commandDesc();
 
-    IAtmCommand clone();
+    IAtmCommand cloneMe();
 }
