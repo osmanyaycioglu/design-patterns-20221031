@@ -1,8 +1,8 @@
 package org.design.patterns.training.atm;
 
-import org.design.patterns.training.behavioral.observer.atm.AtmCommandAuditObserver;
-import org.design.patterns.training.behavioral.observer.atm.AtmCommandLogObserver;
-import org.design.patterns.training.behavioral.observer.atm.AtmCommandObserverDist;
+import org.design.patterns.training.behavioral.strategy.atm.AtmCommandAuditObserver;
+import org.design.patterns.training.behavioral.strategy.atm.AtmCommandLogObserver;
+import org.design.patterns.training.behavioral.strategy.atm.AtmCommandObserverDist;
 
 public class AtmExRun {
     public static void main(String[] args) {

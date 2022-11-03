@@ -1,4 +1,4 @@
-package org.design.patterns.training.behavioral.observer.atm;
+package org.design.patterns.training.behavioral.strategy.atm;
 
 import org.design.patterns.training.behavioral.command.IAtmCommand;
 

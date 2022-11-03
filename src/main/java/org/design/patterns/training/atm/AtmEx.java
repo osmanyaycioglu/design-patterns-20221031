@@ -1,8 +1,7 @@
 package org.design.patterns.training.atm;
 
-import org.design.patterns.training.behavioral.command.CommandFactory;
 import org.design.patterns.training.behavioral.command.IAtmCommand;
-import org.design.patterns.training.behavioral.observer.atm.IAtmCommandObserver;
+import org.design.patterns.training.behavioral.strategy.atm.IAtmCommandObserver;
 
 import java.util.Scanner;
 
