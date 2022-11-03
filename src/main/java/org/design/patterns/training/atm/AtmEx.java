@@ -2,15 +2,20 @@ package org.design.patterns.training.atm;
 
 import org.design.patterns.training.behavioral.command.CommandFactory;
 import org.design.patterns.training.behavioral.command.IAtmCommand;
+import org.design.patterns.training.behavioral.observer.atm.IAtmCommandObserver;
 
 import java.util.Scanner;
 
 public class AtmEx {
 
     private AtmController atmController;
+    private IAtmCommandObserver atmCommandObserver;
 
-    public AtmEx(AtmController atmController) {
+
+    public AtmEx(AtmController atmController,
+                 IAtmCommandObserver atmCommandObserver) {
         this.atmController = atmController;
+        this.atmCommandObserver = atmCommandObserver;
         CustomerCache customerCache = CustomerCache.getInstance();
         customerCache.setCustomerManagerFacade(atmController.getCustomerManagementFacade());
         customerCache.init();
@@ -33,6 +38,7 @@ public class AtmEx {
                 }
                 command.execute(customer,
                                 scanner);
+                atmCommandObserver.commandRunSuccessFully(command);
             }
         } catch (Exception e) {
             e.printStackTrace();

@@ -1,4 +1,4 @@
-package org.design.patterns.training.structural.bridge.car.composite;
+package org.design.patterns.training.structural.composite;
 
 public class FileRun {
 

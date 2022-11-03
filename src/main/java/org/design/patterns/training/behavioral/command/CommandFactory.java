@@ -1,6 +1,6 @@
 package org.design.patterns.training.behavioral.command;
 
-import org.design.patterns.training.structural.proxy.AtmCommandProxy;
+import org.design.patterns.training.structural.proxy.atm.AtmCommandProxy;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package org.design.patterns.training.structural.adapter.chainofresponsibility;
+package org.design.patterns.training.behavioral.chainofresponsibility;
 
 public class CheckNumber implements ICheckNumber {
 

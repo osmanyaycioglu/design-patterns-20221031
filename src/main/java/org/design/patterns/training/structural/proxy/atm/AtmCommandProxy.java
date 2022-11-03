@@ -1,4 +1,4 @@
-package org.design.patterns.training.structural.proxy;
+package org.design.patterns.training.structural.proxy.atm;
 
 import org.design.patterns.training.atm.Customer;
 import org.design.patterns.training.behavioral.command.IAtmCommand;

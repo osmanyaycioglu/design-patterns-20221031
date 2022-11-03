@@ -1,4 +1,4 @@
-package org.design.patterns.training.structural.adapter.chainofresponsibility.atm;
+package org.design.patterns.training.behavioral.chainofresponsibility.atm;
 
 import org.design.patterns.training.atm.Customer;
 
